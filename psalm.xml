@@ -1,9 +1,5 @@
 <?xml version="1.0"?>
-<psalm
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns="https://getpsalm.org/schema/config"
-    xsi:schemaLocation="https://getpsalm.org/schema/config vendor/vimeo/psalm/config.xsd"
->
+<psalm>
     <projectFiles>
         <directory name="src" />
         <ignoreFiles>
@@ -49,7 +45,6 @@
             <errorLevel type="info">
                 <referencedClass name="Symfony\Component\Security\Core\User\AdvancedUserInterface" />
                 <referencedClass name="Pimcore\Bundle\AdminBundle\Controller\AdminControllerInterface" />
-                <referencedClass name="Symfony\Component\DependencyInjection\ContainerAwareInterface" />
             </errorLevel>
         </DeprecatedInterface>
         <DeprecatedMethod>
@@ -72,6 +67,8 @@
                 <referencedMethod name="Symfony\Bundle\SecurityBundle\Security\_FirewallMap::getFirewallConfig" />
                 <referencedMethod name="Symfony\Component\Workflow\Registry::get" />
                 <referencedMethod name="Pimcore\File::getValidFilename" />
+                <referencedMethod name="Pimcore\File::getLocalTempFilePath" />
+                <referencedMethod name="Pimcore\File::getContext" />
             </errorLevel>
         </InternalMethod>
 
@@ -101,9 +98,17 @@
                 <referencedMethod name="Symfony\Component\Config\Definition\Builder\NodeDefinition::integerNode" />
                 <referencedMethod name="Symfony\Component\Config\Definition\Builder\NodeDefinition::scalarNode" />
                 <referencedMethod name="Symfony\Component\Config\Definition\Builder\NodeDefinition::variableNode" />
+                <referencedMethod name="Symfony\Component\Config\Definition\Builder\VariableNodeDefinition::scalarNode" />
                 <referencedMethod name="Symfony\Component\Config\Definition\Builder\NodeParentInterface::end" />
             </errorLevel>
         </PossiblyUndefinedMethod>
+        <UndefinedInterfaceMethod>
+            <errorLevel type="info">
+                <referencedMethod name="Symfony\Component\Config\Definition\Builder\NodeParentInterface::end" />
+                <referencedMethod name="Symfony\Component\Config\Definition\Builder\NodeParentInterface::scalarNode" />
+            </errorLevel>
+        </UndefinedInterfaceMethod>
+
         <PossiblyInvalidArgument errorLevel="info" />
         <PossiblyInvalidArrayAccess errorLevel="info" />
         <PossiblyInvalidArrayAssignment errorLevel="info" />
@@ -127,8 +132,6 @@
         <PossiblyNullPropertyAssignmentValue errorLevel="info" />
         <PossiblyNullPropertyFetch errorLevel="info" />
         <PossiblyNullReference errorLevel="info" />
-        <RiskyTruthyFalsyComparison errorLevel="info" />
-        <MissingTemplateParam errorLevel="info" />
         <!-- level 5 issues - should be avoided at mosts costs... -->
 
         <TooManyArguments>

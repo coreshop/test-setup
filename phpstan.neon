@@ -2,22 +2,22 @@ parameters:
     reportUnmatchedIgnoredErrors: false
     level: 9
     paths:
-     - src
+     - ../../../src
 
 #    scanDirectories:
 #        - var/classes/DataObject
 
     symfony:
-        container_xml_path: var/cache/dev/KernelDevDebugContainer.xml
+        container_xml_path: ../../../var/cache/dev/KernelDevDebugContainer.xml
 
     excludePaths:
         # Makes PHPStan crash
         - '**/DependencyInjection/Configuration.php'
         - '**/Migrations/Version*.php'
         # Ignore cause the file uses external dependencies and will only be used if those dependencies are met
-        - '**/ProcessManager/IndexListener.php'
-        - '**/ProcessManager/IndexProcess.php'
         - '**/DataHub/*.php'
+        - '**/CoreExtension/*.php'
+        - '**/Model/*.php'
 
     ignoreErrors:
         # Magic calls
@@ -41,5 +41,5 @@ parameters:
 
 
 includes:
-    - vendor/phpstan/phpstan-symfony/extension.neon
+    - ../../phpstan/phpstan-symfony/extension.neon
 
