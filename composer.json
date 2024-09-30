@@ -1,0 +1,49 @@
+{
+  "name": "coreshop/test-setup",
+  "type": "library",
+  "description": "CoreShop Shared Test Setup",
+  "keywords": [
+    "coreshop"
+  ],
+  "homepage": "https://www.coreshop.org",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "CoreShop GmbH",
+      "email": "info@coreshop.org",
+      "homepage": "https://www.coreshop.org/",
+      "role": "TEAM"
+    }
+  ],
+  "require": {
+    "behat/mink": "^1.11",
+    "friends-of-behat/mink-debug-extension": "^2.1",
+    "friends-of-behat/mink-extension": "^2.7",
+    "friends-of-behat/page-object-extension": "^0.3.2",
+    "friends-of-behat/symfony-extension": "^2.1",
+    "gotenberg/gotenberg-php": "^2.8",
+    "phpstan/phpstan": "^1.10",
+    "phpstan/phpstan-symfony": "^1.3.2",
+    "robertfausk/behat-panther-extension": "^1.1",
+    "symplify/easy-coding-standard": "^11.1",
+    "vimeo/psalm": "^5.0",
+    "dbrekelmans/bdi": "^1.3",
+    "symfony/panther": "^2.1",
+    "phpunit/phpunit": "^10"
+  },
+  "require-dev": {
+    "coreshop/core-shop": "4.1.x-dev"
+  },
+  "autoload": {
+    "psr-4": {
+      "CoreShop\\Bundle\\B2B\\CompanyBundle\\": "src/Bundle",
+      "CoreShop\\Behat\\B2B\\CompanyBundle\\": "src/Behat"
+    }
+  },
+  "prefer-stable": true,
+  "config": {
+    "allow-plugins": {
+      "php-http/discovery": true
+    }
+  }
+}
