@@ -261,15 +261,4 @@ return static function (ECSConfig $ecsConfig): void {
     $ecsConfig->ruleWithConfiguration(SingleLineCommentStyleFixer::class, ['comment_types' => ['hash']]);
     $ecsConfig->ruleWithConfiguration(TrailingCommaInMultilineFixer::class, ['elements' => ['arrays', 'arguments', 'parameters']]);
     $ecsConfig->ruleWithConfiguration(VisibilityRequiredFixer::class, ['elements' => ['const', 'property', 'method']]);
-
-    $header = <<<EOT
-CoreShop GmbH
- 
-This software is available under the CoreShop Commercial License (CCL).
-  
-@copyright  Copyright (c) CoreShop GmbH (https://www.coreshop.org)
-@license    https://www.coreshop.org/license CCL
-EOT;
-
-    $ecsConfig->ruleWithConfiguration(HeaderCommentFixer::class, ['header' => $header]);
 };
