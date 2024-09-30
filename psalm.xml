@@ -43,6 +43,7 @@
         </DeprecatedClass>
         <DeprecatedInterface>
             <errorLevel type="info">
+                <referencedClass name="Payum\Core\Security\GenericTokenFactoryInterface" />
                 <referencedClass name="Symfony\Component\Security\Core\User\AdvancedUserInterface" />
                 <referencedClass name="Pimcore\Bundle\AdminBundle\Controller\AdminControllerInterface" />
             </errorLevel>
@@ -59,6 +60,7 @@
                 <referencedMethod name="Symfony\Bundle\FrameworkBundle\Controller\AbstractController::get" />
                 <referencedMethod name="Pimcore\Bundle\AdminBundle\Controller\AdminController::decodeJson" />
                 <referencedMethod name="Pimcore\Bundle\AdminBundle\Controller\AdminController::getAdminUser" />
+                <referencedMethod name="Pimcore\Model\DataObject\ClassDefinition\Data::getAsIntegerCast" />
             </errorLevel>
         </DeprecatedMethod>
 
@@ -98,13 +100,19 @@
                 <referencedMethod name="Symfony\Component\Config\Definition\Builder\NodeDefinition::integerNode" />
                 <referencedMethod name="Symfony\Component\Config\Definition\Builder\NodeDefinition::scalarNode" />
                 <referencedMethod name="Symfony\Component\Config\Definition\Builder\NodeDefinition::variableNode" />
-                <referencedMethod name="Symfony\Component\Config\Definition\Builder\VariableNodeDefinition::scalarNode" />
                 <referencedMethod name="Symfony\Component\Config\Definition\Builder\NodeParentInterface::end" />
+                <referencedMethod name="Symfony\Component\Config\Definition\Builder\VariableNodeDefinition::arrayNode" />
+                <referencedMethod name="Symfony\Component\Config\Definition\Builder\VariableNodeDefinition::booleanNode" />
+                <referencedMethod name="Symfony\Component\Config\Definition\Builder\VariableNodeDefinition::children" />
+                <referencedMethod name="Symfony\Component\Config\Definition\Builder\VariableNodeDefinition::integerNode" />
+                <referencedMethod name="Symfony\Component\Config\Definition\Builder\VariableNodeDefinition::scalarNode" />
+                <referencedMethod name="Symfony\Component\Config\Definition\Builder\VariableNodeDefinition::variableNode" />
             </errorLevel>
         </PossiblyUndefinedMethod>
         <UndefinedInterfaceMethod>
             <errorLevel type="info">
                 <referencedMethod name="Symfony\Component\Config\Definition\Builder\NodeParentInterface::end" />
+                <referencedMethod name="Symfony\Component\Config\Definition\Builder\NodeParentInterface::arrayNode" />
                 <referencedMethod name="Symfony\Component\Config\Definition\Builder\NodeParentInterface::scalarNode" />
             </errorLevel>
         </UndefinedInterfaceMethod>
@@ -132,6 +140,7 @@
         <PossiblyNullPropertyAssignmentValue errorLevel="info" />
         <PossiblyNullPropertyFetch errorLevel="info" />
         <PossiblyNullReference errorLevel="info" />
+        <RiskyTruthyFalsyComparison errorLevel="info" />
         <!-- level 5 issues - should be avoided at mosts costs... -->
 
         <TooManyArguments>
@@ -175,5 +184,8 @@
         <!-- remove after guzzlehttp-release -->
         <!-- see https://github.com/guzzle/guzzle/pull/2273 -->
         <InvalidCatch errorLevel="info" />
+
+        <MissingClassConstType errorLevel="info">
+        </MissingClassConstType>
     </issueHandlers>
 </psalm>

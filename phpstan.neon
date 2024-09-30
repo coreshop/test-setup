@@ -4,23 +4,17 @@ parameters:
     paths:
      - ../../../src
 
-#    scanDirectories:
-#        - var/classes/DataObject
-
     symfony:
         container_xml_path: ../../../var/cache/dev/KernelDevDebugContainer.xml
 
     excludePaths:
-        # Makes PHPStan crash
         - '**/DependencyInjection/Configuration.php'
         - '**/Migrations/Version*.php'
-        # Ignore cause the file uses external dependencies and will only be used if those dependencies are met
         - '**/DataHub/*.php'
         - '**/CoreExtension/*.php'
         - '**/Model/*.php'
 
     ignoreErrors:
-        # Magic calls
         - '/Call to an undefined method Faker\\Generator::/'
         - '/Access to an undefined property Faker\\Generator::/'
         - '/Constant PIMCORE_CONFIGURATION_DIRECTORY not found./'
@@ -38,7 +32,6 @@ parameters:
         - '/Symfony\\Contracts\\EventDispatcher\\EventDispatcherInterface::dispatch\(\)/'
         - '/(.*) return type has no value type specified in iterable type array/'
         - '/Method (.*) has parameter \$(.*) with no value type specified in iterable type array/'
-
 
 includes:
     - ../../phpstan/phpstan-symfony/extension.neon
