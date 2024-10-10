@@ -3,7 +3,7 @@
   "type": "library",
   "description": "CoreShop Shared Test Setup",
   "keywords": [
-    "coreshop"
+    "coreshop", "dev"
   ],
   "homepage": "https://www.coreshop.org",
   "license": "proprietary",
@@ -35,21 +35,10 @@
   "require-dev": {
     "coreshop/core-shop": "4.1.x-dev"
   },
-  "autoload": {
-    "psr-4": {
-      "CoreShop\\Bundle\\B2B\\CompanyBundle\\": "src/Bundle",
-      "CoreShop\\Behat\\B2B\\CompanyBundle\\": "src/Behat"
-    }
-  },
   "extra": {
     "branch-alias": {
       "dev-main": "1.0-dev"
     }
   },
-  "prefer-stable": true,
-  "config": {
-    "allow-plugins": {
-      "php-http/discovery": true
-    }
-  }
+  "prefer-stable": true
 }
