@@ -5,13 +5,13 @@
   "keywords": [
     "coreshop", "dev"
   ],
-  "homepage": "https://www.coreshop.org",
+  "homepage": "https://www.coreshop.com",
   "license": "proprietary",
   "authors": [
     {
       "name": "CoreShop GmbH",
-      "email": "info@coreshop.org",
-      "homepage": "https://www.coreshop.org/",
+      "email": "info@coreshop.com",
+      "homepage": "https://www.coreshop.com/",
       "role": "TEAM"
     }
   ],
