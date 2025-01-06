@@ -1,16 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="MessDetectorOptionsConfiguration">
-    <option name="transferred" value="true" />
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
   </component>
-  <component name="PHPCSFixerOptionsConfiguration">
-    <option name="transferred" value="true" />
+  <component name="ChangeListManager">
+    <list default="true" id="87e5284a-2518-4ab1-a395-79f225b95d27" name="Changes" comment="update composer.json">
+      <change beforePath="$PROJECT_DIR$/.idea/test-setup.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/test-setup.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/behat-bootstrap.php" beforeDir="false" afterPath="$PROJECT_DIR$/behat-bootstrap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecs.php" beforeDir="false" afterPath="$PROJECT_DIR$/ecs.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="PHPCodeSnifferOptionsConfiguration">
-    <option name="highlightLevel" value="WARNING" />
-    <option name="transferred" value="true" />
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution />
   </component>
-  <component name="PhpIncludePathManager">
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="/opt/homebrew/Cellar/php/8.2.2/bin/php">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/doctrine/common" />
       <path value="$PROJECT_DIR$/vendor/doctrine/persistence" />
@@ -261,30 +273,83 @@
       <path value="$PROJECT_DIR$/vendor/friends-of-behat/symfony-extension" />
     </include_path>
   </component>
-  <component name="PhpProjectSharedConfiguration" php_language_level="7.1">
-    <option name="suggestChangeDefaultLanguageLevel" value="false" />
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2mnQFjS47ACRP61a9eUTx5GD10f" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PhpStan">
-    <PhpStan_settings>
-      <PhpStanConfiguration tool_path="$PROJECT_DIR$/vendor/bin/phpstan" />
-    </PhpStan_settings>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/dominik/Arbeit/CoreShop/test-setup&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
-  <component name="PhpStanOptionsConfiguration">
-    <option name="config" value="$PROJECT_DIR$/phpstan.neon" />
-    <option name="transferred" value="true" />
+  <component name="RunManager">
+    <configuration name="Main" type="PhpBehatConfigurationType">
+      <BehatRunner configuration_file="$PROJECT_DIR$/behat.yml.dist" scope="Yml" use_alternative_configuration_file="true" />
+      <method v="2" />
+    </configuration>
   </component>
-  <component name="PhpUnit">
-    <phpunit_settings>
-      <PhpUnitSettings custom_loader_path="$PROJECT_DIR$/vendor/autoload.php" />
-    </phpunit_settings>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-PS-241.19072.22" />
+        <option value="bundled-php-predefined-ba97393d7c68-48a1a656d44e-com.jetbrains.php.sharedIndexes-PS-241.19072.22" />
+      </set>
+    </attachedChunks>
   </component>
-  <component name="Psalm">
-    <Psalm_settings>
-      <PsalmConfiguration tool_path="$PROJECT_DIR$/vendor/bin/psalm" />
-    </Psalm_settings>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="87e5284a-2518-4ab1-a395-79f225b95d27" name="Changes" comment="" />
+      <created>1727709758846</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1727709758846</updated>
+      <workItem from="1727709759894" duration="2496000" />
+      <workItem from="1727712585861" duration="36000" />
+      <workItem from="1727719310098" duration="485000" />
+      <workItem from="1727719808774" duration="47000" />
+      <workItem from="1727719967056" duration="1466000" />
+      <workItem from="1727722147740" duration="1988000" />
+      <workItem from="1727725251976" duration="314000" />
+      <workItem from="1728037781512" duration="1921000" />
+      <workItem from="1728282545786" duration="33000" />
+      <workItem from="1728474122510" duration="397000" />
+      <workItem from="1728551716210" duration="27000" />
+      <workItem from="1736187332220" duration="1286000" />
+    </task>
+    <task id="LOCAL-00001" summary="update composer.json">
+      <option name="closed" value="true" />
+      <created>1728551740911</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1728551740911</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
   </component>
-  <component name="PsalmOptionsConfiguration">
-    <option name="config" value="$PROJECT_DIR$/psalm.xml" />
-    <option name="transferred" value="true" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update composer.json" />
+    <option name="LAST_COMMIT_MESSAGE" value="update composer.json" />
   </component>
 </project>

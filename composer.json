@@ -6,7 +6,7 @@
     "coreshop", "dev"
   ],
   "homepage": "https://www.coreshop.com",
-  "license": "proprietary",
+  "license": "GPL-3.0-or-later",
   "authors": [
     {
       "name": "CoreShop GmbH",
