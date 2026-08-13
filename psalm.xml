@@ -8,6 +8,11 @@
     </projectFiles>
 
     <issueHandlers>
+        <!-- This is a shared config: individual bundles may or may not hit a
+             suppressed issue type, so an unused suppression must never fail
+             the build (Psalm 6 reports it as an error by default). -->
+        <UnusedIssueHandlerSuppression errorLevel="info" />
+
         <!-- level 3 issues - slightly lazy code writing, but probably low false-negatives -->
         <UndefinedConstant>
             <errorLevel type="suppress">
